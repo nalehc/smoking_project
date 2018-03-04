@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3Times</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1>Smoke on the Water</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="article">
+					<p>Smoking is bad for you, being associated with an increased risk of premature death and chronic
+						health conditions. Given this, I considered factors that might be associated with increased 
+						smoking in different states. I did a bit of background research and I noted was that people
+						in certain <a "href =https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6038a2.htm">industries</a> are more likely to smoke.
+						With this in mind I investigated if some states were outliers using the industry of production, transportation and 
+						material moving as a model since the CDC article mentions production (manufacturing) and transportation specifically. 
+						I've also talked with people personally in manufacturing jobs who say they took up smoking as a way to get more breaks, 
+						unfortunately. 
+					</p>
+					<hr>
+					<p><strong>West Virginia</strong> is an outlier in this dataset because only 12% of the state 
+					is employed in production, transportation, and material moving, but 23% of West Virginians smoke. 
+					This isn't that surprising as West Virginia is one of the nation's
+					<a "href =http://mountaineernewsservice.com/west-virginia-ranks-among-nations-worst-in-tobacco-use/">worst states for tobacco use</a>
+					This may be due to West Virginia being a state with more poverty and less education than is typical in the rest
+					of the US, as well as low cigarette taxes. 
+					<br>
+					<strong>Utah</strong> is an outlier in the opposite direction. The rate of employement in these 
+					industries is similar to West Virginia, but a mere 6% of people smoke in the state. This has a large
+					part to do with religion, a majority of people in the state identify as member of the Church of Later
+					Day Saints(Mormons). Members of the church do not typically use drugs or alcohol and tobacco use
+					is culturally frowned upon.</p>
+					<br>
+					<h2>Hover the circles to find where your state falls!</h2>
+				</div>
+			</div>
+		</div>
+		<div class="iframeContainer">
+			<iframe class="embed-responsive-item" src="d3.html"></iframe>
+		</div>
+	</div>
+
+		<!-- Footer-->
+	<div id="footer">
+		<p><!-- Insert your Copyright Info here --></p>
+	</div>
+
+</body>
+</html>
